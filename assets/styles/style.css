@@ -12,7 +12,7 @@
 }
 
 .home-container {
- width: 30%;
+  width: 30%;
   margin: auto;
   display: flex;
   flex-direction: column;

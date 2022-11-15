@@ -7,7 +7,7 @@ This project is called the wedding invitation template.
 
 This page give describtion about a scheduled meeting and invitation details.
 
-## Built With:
+## Built With
 - HTML
 - CSS
 
