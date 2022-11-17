@@ -2,11 +2,14 @@
 
 This project is called the wedding invitation template.
 
-
 ## ABOUT
 
 This page give describtion about a scheduled meeting and invitation details.
 
+## App
+
+![WT](assets/images/capture.JPG)
+![WT](assets/images/capture2.JPG)
 ## Built With
 - HTML
 - CSS
