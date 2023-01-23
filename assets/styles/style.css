@@ -1,173 +1,280 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#navbar{
-height: 8vh;
-background: rgba(255, 255, 255, 0.274);
-bottom: 0;
-position: fixed;
-width: 100%;
-
-}
-#navbar:hover{
-    background: white;
-}
-#navbar ul{
-    display: flex;
-}
-#navbar ul li{
-    height: 100%;
-    flex-basis: 25%;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 15px;
-    padding-top: 2vh;
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#navbar ul li:hover{
-background: rgb(185, 185, 185);
+#home {
+  background-image: url("../images/wedding_couple.jpg");
+  height: 100vh;
+  background-size: cover;
+  filter: grayscale(50%);
+}
 
+.home-container {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 9%;
 }
-#navbar ul li a{
-    text-decoration: none;
-    color: black;
+
+.home-p2 {
+  color: white;
+  font-size: 30px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: -60px;
 }
-#intro{
+
+.home-p3 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.jj-hm {
+  font-weight: lighter;
+  font-size: 64px;
+  font-family: Raleway, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.jane-container1 {
+  filter: grayscale(50%);
+  background-color: #fdd;
+  padding-bottom: 80px;
+}
+
+.jane-container2 {
+  max-width: 900px;
+  margin: auto;
+}
+
+.jane-container2 h3 {
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 45px;
+  color: gray;
+  font-size: 35px;
+}
+
+.jane-container2 img {
+  filter: grayscale(50%);
+}
+
+.jane-container2 p {
+  margin-top: 40px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.jane-btn {
+  margin-left: 40%;
+  margin-top: 30px;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+.jane-btn:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+/* section3 */
+
+.section3-container {
+  background-image: url("../images/flowers.jpg");
+  min-height: 650px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  filter: grayscale(5%);
+}
+
+.section3-container h1 {
+  color: white;
+  font-size: 60px;
+}
+
+.section3-container p {
+  color: white;
+  font-size: 35px;
+}
+
+/* Wedding */
+
+.wedding-container1 {
+  background-color: #fdd;
+  filter: grayscale(60%);
+}
+
+.wedding-container2 {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.wedding-container2 h1 {
+  font-size: 35px;
+  color: gray;
+}
+
+.wedding-container2 img {
+  margin-top: 50.5px;
+}
+
+.wedding-container3 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding-bottom: 120px;
+}
+
+.wedding-container3 span {
+  font-size: 25px;
+}
+
+/* RSVP */
+
+.rsvp-container1 {
+  background-color: #fdd;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.rsvp-container2 {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.rsvp-container2 h1 {
+  font-size: 35px;
+}
+
+.rsvp-container2 p {
+  font-size: 20px;
+}
+
+.rsvp-btn {
+  border: none;
+  color: white;
+  padding: 20px 60px;
+  background-color: #f44336;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.rsvp-btn:hover {
+  color: black;
+  background-color: grey;
+}
+
+/* footer */
+
+.footer-container1 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-container1 a {
+  color: white;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 55px;
+}
+
+.footer-container1 a:hover {
+  color: green;
+}
+
+/* Navbar */
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  opacity: 0.75;
+  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.nav-container:hover {
+  opacity: 1;
+}
+
+.nav-a1:hover {
+  background-color: gray;
+}
+
+.nav-a2:hover {
+  color: white;
+  background-color: #000;
+}
+
+@media only screen and (max-width: 425px) {
+  .jane-container2 {
+    margin: 30px;
+  }
+
+  .jane-container2 img {
     width: 100%;
-    height: auto;
-    background: url(../images/back1.jpg);
-    background-size: cover;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: white;
-}
-#intro p{
-    font-size: 40px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    line-height: 45px;
-}
-.wr{
-    padding-top: 20vh;
-    justify-content: center;
-    align-items: center;
+  }
 
-}
-#JJ{
-    padding-top: 70px;
-    background: rgb(235, 206, 210);
-    display: inherit;
-    height: auto;
-    padding-bottom: 80px;
-}
-#JJ h1{
-    text-align: center;
-    color:rgb(82, 82, 82);
-    font-size: 30px;
-}
-#JJ p{
-    width: 90%;
-    margin: auto;
-    font-size: 20px;
-    line-height: 25px;
-    border-radius: 5px;
-}
-.wedpic{
-    width: 80%;
-    margin: auto;
-}
-.wedpic img{
+  .jane-btn {
+    margin-left: 20%;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .wedding-container2 {
+    max-width: 900px;
+    margin: 15px;
+  }
+
+  .wedding-container3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .wedding-space {
+    margin-top: 25px;
+  }
+
+  .wedding-container2 img {
+    margin-top: 40px;
     width: 100%;
+    border-radius: 15px;
+  }
 }
-.btn{
-    position: relative;
-    text-align: center;
-}
-.button{
-    background: black;
-    color: white;
-    height: 50px;
-    width: 10%;
-    min-width: 200px;
-    border-radius: 5px;
-    transition: background 0.5s;
-}
-.button:hover{
-    background: rgb(187, 185, 185);
-    color: black;
-}
-#roses{
-        width: 100%;
-        height: 100vh;
-        background: url(../images/rosesback.jpg);
-        background-size: cover;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        color: rgb(255, 255, 255);
-    }
-    #roses p{
-        font-size: 40px;
-        font-weight: bold;
-        color: rgb(0, 0, 0);
-        justify-content: center;
-        line-height: 45px;
-    }
-
-#wedding{
-    padding-top: 70px;
-    background: rgb(235, 206, 210);
-    display: inherit;
-    height: auto;
-    padding-bottom: 80px;
-}
-#wedding h1{
-    text-align: center;
-    color:rgb(82, 82, 82);
-    font-size: 30px;
-}
-#wedding img,p{
-    width: 90%;
-    margin: 2rem;
-    font-size: 20px;
-    line-height: 25px;
-    border-radius: 5px;
-}
-.wh{
-    display: flex;
-}
-.whn{
-    flex-basis: 48%;
-    text-align: center;
-}
-#rsvp{
-    padding-top: 80px;
-
-    background: rgb(248, 185, 206);
-    text-align: center;
-    padding-bottom: 80px;
-}
-#footer{
-    padding-top: 0.1px;
-    height: 10vh;
-    background: black;
-    color: white;
-    text-align: center;
-}
-#rsvp .btn2 button{    
-    background: rgb(165, 0, 0);
-    color: white;
-    height: 50px;
-    width: 10%;
-    min-width: 200px;
-    border-radius: 5px;
-}
-#rsvp .btn2 button:hover{
-    background: rgb(187, 185, 185);
-    color: black;
-}
-
